@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge PDF</title>
+     <script src="https://kit.fontawesome.com/fa67803e56.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/pdf-lib@latest/dist/pdf-lib.min.js"></script>
+    <style>
+    body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f5f5f5;
+        color: #333;
+        margin: 0;
+        padding: 0;
+    }
+
+    .container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 30px;
+        background-color: #fff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+        font-size: 2em;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    input[type="file"] {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    button {
+        padding: 10px;
+        margin: 5px 0;
+        border-radius: 4px;
+        font-size: 1em;
+        background-color: #007bff;
+        color: #fff;
+        border: none;
+        cursor: pointer;
+    }
+
+    button:hover {
+        background-color: #0056b3;
+    }
+
+    #fileList li button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    margin-left: 10px;
+    font-size: 18px;
+    }
+
+    #fileList li button:before {
+        display: inline-block;
+        margin-right: 4px;
+    }
+
+    span {
+    font-size: 12px;
+    }
+    img {
+    width:100px;
+    }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><img src"logo.gif"> <br>PDF merger</h1>
+        <span>Note: All uploaded files will stay on your computer and are not uploaded to any server</span>
+        <div id="drop-zone" style="border: 2px dashed #ccc; padding: 20px; text-align: center;">
+    <p>Drag and drop PDF files here or click to upload</p>
+</div>
+        <button id="mergePdfs">Merge PDFs</button>
+        <h2>Uploaded Files:</h2>
+        <ul type="1" id="fileList"></ul>
+        <br>
+        <br>
+        <br><hr>
+        <span>footer</span>
+    </div>
+    
+    <script src="merge-script.js"></script>
+</body>
+</html>
