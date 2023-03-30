@@ -18,7 +18,7 @@ PDF Merger is a simple and user-friendly web application that allows you to merg
 1. Clone this repository:
 
 ```sh
-git clone https://github.com/your-username/pdf-merger.git 
+git clone https://github.com/0000vt/pdfmerger.git
 ```
 2. Open the index.html file in your browser.
 
