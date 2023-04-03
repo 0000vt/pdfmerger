@@ -1,4 +1,4 @@
-# PDF Merger
+# PDF Web Merger
 
 PDF Merger is a simple and user-friendly web application that allows you to merge multiple PDF files into a single PDF document. It is built using JavaScript and the [PDF-Lib](https://github.com/Hopding/pdf-lib) library. The application runs entirely in the browser, so all file processing is done on your local machine, ensuring your PDFs remain private and secure.
 
